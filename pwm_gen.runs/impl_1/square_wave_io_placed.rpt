@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date                      : Sun Aug 12 15:14:16 2018
+| Date                      : Sun Aug 12 22:38:57 2018
 | Host                      : guille running 64-bit Ubuntu 18.04.1 LTS
 | Command                   : report_io -file square_wave_io_placed.rpt
 | Design                    : square_wave
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|             2 |
+|             4 |
 +---------------+
 
 
@@ -230,7 +230,7 @@ Table of Contents
 | K13        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | K14        |             | High Range | IO_L20P_T3_AD6P_35      | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K15        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| K16        |             | High Range | IO_L24P_T3_AD15P_35     | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| K16        | adc_in      | High Range | IO_L24P_T3_AD15P_35     | INPUT         | LVTTL       |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | K17        |             | High Range | IO_L12P_T1_MRCC_35      | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K18        |             | High Range | IO_L12N_T1_MRCC_35      | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K19        |             | High Range | IO_L10P_T1_AD11P_35     | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -250,7 +250,7 @@ Table of Contents
 | L13        |             |            | VCCINT                  | VCCINT        |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L14        |             | High Range | IO_L22P_T3_AD7P_35      | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L15        |             | High Range | IO_L22N_T3_AD7N_35      | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| L16        | clk         | High Range | IO_L11P_T1_SRCC_35      | INPUT         | LVTTL       |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| L16        | extclk      | High Range | IO_L11P_T1_SRCC_35      | INPUT         | LVTTL       |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | L17        |             | High Range | IO_L11N_T1_SRCC_35      | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L18        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | L19        |             | High Range | IO_L9P_T1_DQS_AD3P_35   | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -386,7 +386,7 @@ Table of Contents
 | V9         |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | V10        |             |            | NC                      | Not Connected |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V11        |             |            | NC                      | Not Connected |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| V12        | s_out       | High Range | IO_L4P_T0_34            | OUTPUT        | LVTTL       |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| V12        | pwm_out     | High Range | IO_L4P_T0_34            | OUTPUT        | LVTTL       |      34 |         24 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V13        |             | High Range | IO_L3N_T0_DQS_34        | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V14        |             | High Range | VCCO_34                 | VCCO          |             |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | V15        |             | High Range | IO_L10P_T1_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -430,7 +430,7 @@ Table of Contents
 | Y13        |             |            | NC                      | Not Connected |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | Y14        |             | High Range | IO_L8N_T1_34            | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | Y15        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| Y16        |             | High Range | IO_L7P_T1_34            | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| Y16        | reset       | High Range | IO_L7P_T1_34            | INPUT         | LVTTL       |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | Y17        |             | High Range | IO_L7N_T1_34            | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | Y18        |             | High Range | IO_L17P_T2_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | Y19        |             | High Range | IO_L17N_T2_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

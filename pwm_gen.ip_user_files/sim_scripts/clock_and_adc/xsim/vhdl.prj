@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/clock_and_adc/ip/clock_and_adc_xadc_wiz_0_0/clock_and_adc_xadc_wiz_0_0.vhd" \
+"../../../bd/clock_and_adc/sim/clock_and_adc.vhd" \
+
+nosort
