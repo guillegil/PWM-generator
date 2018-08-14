@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
---Date        : Sun Aug 12 19:16:20 2018
+--Date        : Tue Aug 14 13:23:48 2018
 --Host        : guille running 64-bit Ubuntu 18.04.1 LTS
 --Command     : generate_target clock_and_adc_wrapper.bd
 --Design      : clock_and_adc_wrapper
@@ -32,8 +32,6 @@ end clock_and_adc_wrapper;
 architecture STRUCTURE of clock_and_adc_wrapper is
   component clock_and_adc is
   port (
-    reset_rtl_0 : in STD_LOGIC;
-    clk_125MHz : in STD_LOGIC;
     Vaux15_0_v_n : in STD_LOGIC;
     Vaux15_0_v_p : in STD_LOGIC;
     Vp_Vn_0_v_n : in STD_LOGIC;
@@ -44,6 +42,8 @@ architecture STRUCTURE of clock_and_adc_wrapper is
     s_drp_0_do : out STD_LOGIC_VECTOR ( 15 downto 0 );
     s_drp_0_drdy : out STD_LOGIC;
     s_drp_0_dwe : in STD_LOGIC;
+    reset_rtl_0 : in STD_LOGIC;
+    clk_125MHz : in STD_LOGIC;
     clk_out2_0 : out STD_LOGIC
   );
   end component clock_and_adc;

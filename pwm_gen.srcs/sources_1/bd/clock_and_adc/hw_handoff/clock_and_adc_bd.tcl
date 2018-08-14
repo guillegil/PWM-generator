@@ -197,8 +197,10 @@ proc create_root_design { parentCell } {
   # Create instance: xadc_wiz_0, and set properties
   set xadc_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.3 xadc_wiz_0 ]
   set_property -dict [ list \
+   CONFIG.CHANNEL_AVERAGING {256} \
    CONFIG.CHANNEL_ENABLE_VAUXP15_VAUXN15 {true} \
    CONFIG.CHANNEL_ENABLE_VP_VN {true} \
+   CONFIG.ENABLE_CALIBRATION_AVERAGING {true} \
    CONFIG.ENABLE_RESET {true} \
    CONFIG.ENABLE_VCCDDRO_ALARM {false} \
    CONFIG.ENABLE_VCCPAUX_ALARM {false} \

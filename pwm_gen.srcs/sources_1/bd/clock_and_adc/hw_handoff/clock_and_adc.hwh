@@ -1,9 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Aug 12 19:16:21 2018" VIVADOVERSION="2018.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug 14 13:23:50 2018" VIVADOVERSION="2018.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="clock_and_adc" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
+    <PORT DIR="I" NAME="Vaux15_0_v_n" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Vaux15_0_v_p" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Vp_Vn_0_v_n" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Vp_Vn_0_v_p" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="6" NAME="s_drp_0_daddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="s_drp_0_den" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="s_drp_0_di" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="s_drp_0_do" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="s_drp_0_drdy" SIGIS="undef"/>
+    <PORT DIR="I" NAME="s_drp_0_dwe" SIGIS="undef"/>
     <PORT DIR="I" NAME="reset_rtl_0" SIGIS="rst" SIGNAME="External_Ports_reset_rtl_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="reset"/>
@@ -15,16 +25,6 @@
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Vaux15_0_v_n" SIGIS="undef"/>
-    <PORT DIR="I" NAME="Vaux15_0_v_p" SIGIS="undef"/>
-    <PORT DIR="I" NAME="Vp_Vn_0_v_n" SIGIS="undef"/>
-    <PORT DIR="I" NAME="Vp_Vn_0_v_p" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="6" NAME="s_drp_0_daddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="s_drp_0_den" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="15" NAME="s_drp_0_di" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="15" NAME="s_drp_0_do" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="s_drp_0_drdy" SIGIS="undef"/>
-    <PORT DIR="I" NAME="s_drp_0_dwe" SIGIS="undef"/>
     <PORT CLKFREQUENCY="5000000" DIR="O" NAME="clk_out2_0" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
@@ -687,7 +687,7 @@
         <PARAMETER NAME="C_HAS_VCCPINT_ALARM" VALUE="0"/>
         <PARAMETER NAME="C_HAS_VCCPAUX_ALARM" VALUE="0"/>
         <PARAMETER NAME="C_HAS_VCCDDRO_ALARM" VALUE="0"/>
-        <PARAMETER NAME="C_CONFIGURATION_R0" VALUE="0"/>
+        <PARAMETER NAME="C_CONFIGURATION_R0" VALUE="12288"/>
         <PARAMETER NAME="C_CONFIGURATION_R1" VALUE="8623"/>
         <PARAMETER NAME="C_CONFIGURATION_R2" VALUE="1024"/>
         <PARAMETER NAME="C_ALARM_LIMIT_R0" VALUE="46573"/>
@@ -792,7 +792,7 @@
         <PARAMETER NAME="SINGLE_CHANNEL_ENABLE_CALIBRATION" VALUE="true"/>
         <PARAMETER NAME="BIPOLAR_OPERATION" VALUE="false"/>
         <PARAMETER NAME="SINGLE_CHANNEL_ACQUISITION_TIME" VALUE="false"/>
-        <PARAMETER NAME="CHANNEL_AVERAGING" VALUE="None"/>
+        <PARAMETER NAME="CHANNEL_AVERAGING" VALUE="256"/>
         <PARAMETER NAME="ADC_OFFSET_CALIBRATION" VALUE="false"/>
         <PARAMETER NAME="ADC_OFFSET_AND_GAIN_CALIBRATION" VALUE="true"/>
         <PARAMETER NAME="SENSOR_OFFSET_CALIBRATION" VALUE="false"/>

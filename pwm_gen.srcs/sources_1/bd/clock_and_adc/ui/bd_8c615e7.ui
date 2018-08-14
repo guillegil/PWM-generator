@@ -17,7 +17,7 @@ preplace netloc clk_wiz_0_clk_out1 1 1 1 -360
 preplace netloc clk_wiz_0_clk_out2 1 1 2 NJ -290 NJ
 preplace netloc reset_rtl_0_1 1 0 2 -620J -230 -370
 preplace netloc clk_125MHz_1 1 0 1 N
-levelinfo -pg 1 -640 -470 -90 280 -top -520 -bot 140
+levelinfo -pg 1 -640 -470 -100 50 -top -520 -bot 140
 ",
 }
 {

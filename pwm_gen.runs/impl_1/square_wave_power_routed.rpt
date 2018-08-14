@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date             : Sun Aug 12 22:39:10 2018
+| Date             : Tue Aug 14 13:27:56 2018
 | Host             : guille running 64-bit Ubuntu 18.04.1 LTS
 | Command          : report_power -file square_wave_power_routed.rpt -pb square_wave_power_summary_routed.pb -rpx square_wave_power_routed.rpx
 | Design           : square_wave
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |       78 |       --- |             --- |
+| Slice Logic    |    <0.001 |       77 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       25 |     17600 |            0.14 |
-|   CARRY4       |    <0.001 |       15 |      4400 |            0.34 |
+|   CARRY4       |    <0.001 |       14 |      4400 |            0.32 |
 |   Register     |    <0.001 |       33 |     35200 |            0.09 |
 |   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |    <0.001 |       82 |       --- |             --- |
+| Signals        |    <0.001 |       80 |       --- |             --- |
 | MMCM           |     0.097 |        1 |         2 |           50.00 |
 | I/O            |    <0.001 |        4 |       100 |            4.00 |
 | XADC           |     0.002 |        1 |       --- |             --- |

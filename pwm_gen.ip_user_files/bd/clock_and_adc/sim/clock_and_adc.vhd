@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
---Date        : Sun Aug 12 19:16:19 2018
+--Date        : Tue Aug 14 13:23:48 2018
 --Host        : guille running 64-bit Ubuntu 18.04.1 LTS
 --Command     : generate_target clock_and_adc.bd
 --Design      : clock_and_adc

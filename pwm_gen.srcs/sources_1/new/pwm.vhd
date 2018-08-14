@@ -48,7 +48,7 @@ architecture pwm of square_wave is
     signal COUNT: INTEGER;
     
     component clock_and_adc is
-      port (
+    port (
       Vaux15_0_v_n : in STD_LOGIC;
       Vaux15_0_v_p : in STD_LOGIC;
       Vp_Vn_0_v_n : in STD_LOGIC;
@@ -93,7 +93,7 @@ begin
             else
                 COUNT <= COUNT + 1;
                 
-                if(COUNT = (5000 + 2*TO_INTEGER(UNSIGNED(ADC_DRP_DO(15 downto 3))))) then
+                if(COUNT = (5000 + TO_INTEGER(UNSIGNED(ADC_DRP_DO(15 downto 3))))) then
                     pwm_out <= '0';
                  end if;
              end if;    
